@@ -25,6 +25,7 @@ public class AddItem extends HttpServlet {
             jewellery.setPrice(Double.parseDouble(request.getParameter("price")));
             jewellery.setDescription(request.getParameter("description"));
 
+            
             JewelleryDAO dao = new JewelleryDAO();
             boolean status = dao.add(jewellery);
 
